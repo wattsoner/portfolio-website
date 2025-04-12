@@ -1,0 +1,198 @@
+/* ------------------------------
+   Global Reset & Base Styles
+------------------------------ */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  background: #FBFADA;
+  font-size: 1.6rem;
+  color: #0E2431;
+}
+
+.content-wrapper {
+  padding-top: 6.5rem;
+}
+
+/* ------------------------------
+   Header
+------------------------------ */
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1000;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1.7rem 10%;
+  height: 6.5rem;
+  background-color: #ADBC9F;
+  box-shadow: 0 1px 4px rgba(146, 161, 176, 0.3);
+}
+
+header .logo {
+  font-size: 1.9rem;
+  font-weight: 800;
+  text-decoration: none;
+  color: #0E2431;
+}
+
+/* ------------------------------
+   Project Details Container
+------------------------------ */
+.project-details {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2rem;
+  margin: 2rem 15%;
+}
+
+@media (max-width: 768px) {
+  .project-details {
+    grid-template-columns: 1fr;
+    margin: 2rem 5%;
+  }
+}
+
+/* ------------------------------
+   Gallery Styles
+------------------------------ */
+.project-gallery {
+  position: relative;
+}
+
+.gallery-wrapper {
+  width: 100%;
+  height: 300px; /* Fixed height for gallery */
+  overflow: hidden;
+  position: relative;
+  margin-bottom: 1rem; /* Added spacing below gallery */
+}
+
+.gallery-image {
+  display: none; /* Controlled via JS */
+  border-radius: 5%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+/* Adjusted Navigation Buttons */
+.gallery-prev,
+.gallery-next {
+  position: absolute;
+  top: 40%; /* Raised from 50% to appear higher */
+  transform: translateY(-50%);
+  z-index: 10;
+  background: rgba(0, 0, 0, 0.5);
+  color: #fff;
+  border: none;
+  font-size: 2rem;
+  padding: 0.5rem 1rem;
+  cursor: pointer;
+}
+
+.gallery-prev {
+  left: 10px;
+}
+
+.gallery-next {
+  right: 10px;
+}
+
+/* ------------------------------
+   Project Info & Buttons
+------------------------------ */
+.project-info {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.project-info p {
+  font-size: 1.6rem;
+  line-height: 1.5;
+}
+
+.project-info .btns {
+  margin-top: 2rem;
+  display: flex;
+  gap: 1.5rem;
+}
+
+.project-info .btns .btn {
+  display: inline-block;
+  padding: 1.6rem 3rem;
+  border-radius: 4em;
+  background: #436850;
+  color: #fff;
+  font-family: 'Nunito', sans-serif;
+  font-size: 1.7rem;
+  text-decoration: none;
+  text-align: center;
+  box-shadow: 0 5px 18px rgba(67, 104, 80, 0.5);
+  transition: background 0.5s, transform 0.3s;
+}
+
+.project-info .btns .btn:hover {
+  background: #12372A;
+  transform: translateY(-3px) scale(1.05);
+}
+
+.project-info .btns .btn i {
+  margin-right: 0.5rem;
+}
+
+/* ------------------------------
+   Bottom Sections: Skills & Technologies
+------------------------------ */
+.project-info-bottom {
+  margin-top: 3rem;
+}
+
+.skills-learned,
+.technologies-used {
+  padding: 2rem;
+  background: #ADBC9F; /* Accent color */
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  margin-bottom: 2rem; /* Space between sections */
+}
+
+.skills-learned h3,
+.technologies-used h3 {
+  font-size: 2.2rem;
+  color: #12372A;
+  margin-bottom: 1rem;
+  border-bottom: 2px solid #12372A;
+  padding-bottom: 0.5rem;
+}
+
+/* Horizontal list layout for skills & technologies */
+.skills-learned ul,
+.technologies-used ul {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+  margin-top: 1rem;
+  padding: 0;
+  list-style: none;
+}
+
+.skills-learned li,
+.technologies-used li {
+  background: #97A787; /* Slightly darker for contrast */
+  color: #0E2431;
+  padding: 0.8rem 1.2rem;
+  border-radius: 4px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+}

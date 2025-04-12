@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="user-scalable=no, width=device-width, initial-scale=1, maximum-scale=1" />
+  <meta name="description" content="Project details for my portfolio." />
+
+  <!-- Open Graph Meta -->
+  <meta property="og:title" content="Wattie's Work" />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://wattie.work" />
+  <meta property="og:image" content="https://wattie.work/assets/files/images/profile.png" />
+  <meta property="og:description" content="Welcome to my Portfolio! Feel free to look around at my projects!" />
+  <meta property="og:locale" content="en_GB" />
+  
+  <!-- jQuery -->
+  <script src="https://cdn.jsdelivr.net/npm/jquery@3.3.1/dist/jquery.min.js" type="text/javascript"></script>
+  
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="../../css/style.css" />
+  <link rel="stylesheet" href="../../css/project-style.css" />
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.css" />
+
+  <!-- Favicon -->
+  <link id="favicon" rel="shortcut icon" href="./assets/files/images/profile.png" type="image/x-png" class="noselect" />
+
+  <style>
+    html,
+    body {
+      height: 100%;
+      margin: 0;
+      padding: 0;
+    }
+    body {
+      display: flex;
+      flex-direction: column;
+    }
+    .content-wrapper {
+      flex: 1;
+      padding-top: 6.5rem;
+    }
+  </style>
+
+  <title>Games | </title>
+</head>
+<body oncontextmenu="return false">
+  <!-- Navbar Starts -->
+  <header>
+    <a href="../../../index.html" class="logo">Wattie King</a>
+    <div id="menu" class="fas fa-bars"></div>
+    <nav class="navbar">
+      <ul>
+        <li><a href="../../../index.html#home">Home</a></li>
+      </ul>
+    </nav>
+  </header>
+  <!-- Navbar Ends -->
+
+  <!-- Main Content Wrapper -->
+  <main class="content-wrapper">
+    <!-- Project Template Section -->
+    <section class="spacing project-template" id="project" style="padding: 2rem 15%;">
+      <h2 class="heading">
+        <i class="fas fa-project-diagram" style="color:#355E3B"></i>
+        <span>Project Name</span>
+      </h2>
+
+      <div class="project-details" style="display: flex; flex-wrap: wrap; gap: 2rem; margin-top: 2rem;">
+        <!-- Gallery replaces the single project image -->
+        <div class="project-gallery" style="flex: 1 1 40rem; position: relative;">
+          <!-- Previous Button -->
+          <button class="gallery-prev" 
+                  style="position: absolute; top: 50%; left: 10px; transform: translateY(-50%);
+                         z-index: 10; background: rgba(0,0,0,0.5); color: #fff; border: none; 
+                         font-size: 2rem; padding: 0.5rem 1rem; cursor: pointer;">
+            &#10094;
+          </button>
+          
+          <!-- Gallery Wrapper -->
+          <div class="gallery-wrapper" style="overflow: hidden;">
+            <img class="gallery-image" src="../../files/images/" alt="Project Image 1"
+                 style="width: 100%; display: none; border-radius: 5%;">
+            <img class="gallery-image" src="../../files/images/" alt="Project Image 2"
+                 style="width: 100%; display: none; border-radius: 5%;">
+            <img class="gallery-image" src="../../files/images/" alt="Project Image 3"
+                 style="width: 100%; display: none; border-radius: 5%;">
+          </div>
+          
+          <!-- Next Button -->
+          <button class="gallery-next" 
+                  style="position: absolute; top: 50%; right: 10px; transform: translateY(-50%);
+                         z-index: 10; background: rgba(0,0,0,0.5); color: #fff; border: none; 
+                         font-size: 2rem; padding: 0.5rem 1rem; cursor: pointer;">
+            &#10095;
+          </button>
+        </div>
+        
+        <!-- Project Info -->
+        <div class="project-info" style="flex: 1 1 40rem;">
+          <p style="font-size: 1.6rem; line-height: 1.5;">
+            <strong>Project Name</strong> is a cutting-edge tool designed to revolutionize how you manage your tasks.
+            It features a clean interface and robust functionality for modern users.
+          </p>
+          
+          <div class="btns" style="margin-top: 2rem;">
+            <a href="play.html" class="btn" target="_blank">
+              <i class="fas fa-play"></i> <span>Play Now</span>
+            </a>
+            <a href="https://github.com/wattsoner/your-repo" class="btn" target="_blank">
+              <i class="fas fa-code"></i> <span>View Code</span>
+            </a>
+          </div>
+          
+          <div class="tech-used" style="margin-top: 3rem;">
+            <h3 style="font-size: 2.2rem; color: #12372A;">Technologies Used</h3>
+            <ul style="list-style: disc; padding-left: 2rem; font-size: 1.6rem;">
+              <li>HTML5</li>
+              <li>CSS3</li>
+              <li>JavaScript</li>
+              <li>Node.js</li>
+              <li>Express</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+  <!-- Main Content Wrapper Ends -->
+
+  <!-- Footer Section -->
+  <section class="spacing footer">
+    <div class="box-container">
+      <div class="box">
+        <h3>My Portfolio</h3>
+        <p>Thank you for looking at my Portfolio! Feel free to get in touch about commission work, collaborations, photography shoots, or anything else! I am open.</p>
+      </div>
+      <div class="box">
+        <h3>quick links</h3>
+        <a href="../../../index.html"><i class="fas fa-chevron-circle-right"></i> home</a>
+      </div>
+      <div class="box">
+        <h3>contact info</h3>
+        <p><i class="fas fa-envelope"></i> hello@wattie.work</p>
+        <p><i class="fas fa-map-marked-alt"></i> London, United Kingdom</p>
+        <div class="share">
+          <a href="mailto:hello@wattie.work"><i class="fas fa-envelope"></i></a>
+          <a href="https://github.com/wattsoner"><i class="fab fa-github"></i></a>
+          <a href="https://bsky.app/profile/wattie.bsky.social"><i class="fab fa-bluesky"></i></a>
+          <a href="https://wattieee.itch.io"><i class="fab fa-itch-io"></i></a>
+          <a href="https://www.flickr.com/photos/wattsoner/"><i class="fab fa-flickr"></i></a>
+        </div>       
+      </div>
+    </div>
+  </section>
+  <!-- Footer Ends -->
+
+  <!-- Scroll Top Button -->
+  <a href="../../../index.html#home" class="fas fa-angle-up" id="scroll-top"></a>
+
+  <!-- Scripts -->
+  <script src="https://cdn.jsdelivr.net/npm/jquery@3.3.1/dist/jquery.min.js" type="text/javascript"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/js/all.min.js"></script>
+  <script src="./assets/js/particles.min.js"></script>
+  <script src="./assets/js/app.js"></script>
+  <script src="https://unpkg.com/scrollreveal"></script>
+  <script src="../../js/script.js"></script>
+  <script src="../../js/gallery.js"></script>
+</body>
+</html>

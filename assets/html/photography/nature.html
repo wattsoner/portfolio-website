@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="user-scalable=no, width=device-width, initial-scale=1, maximum-scale=1" />
+  <meta name="description" content="Project details for my portfolio." />
+
+  <!-- Open Graph Meta -->
+  <meta property="og:title" content="Wattie's Work" />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://wattie.work" />
+  <meta property="og:image" content="https://wattie.work/assets/files/images/profile.png" />
+  <meta property="og:description" content="Welcome to my Portfolio! Feel free to look around at my projects!" />
+  <meta property="og:locale" content="en_GB" />
+  
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="../../css/style.css" />
+  <link rel="stylesheet" href="../../css/project-style.css" />
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.css" />
+  
+  <!-- jQuery -->
+  <script src="https://cdn.jsdelivr.net/npm/jquery@3.3.1/dist/jquery.min.js" type="text/javascript"></script>
+  
+  <!-- nanogallery2 -->
+  <link  href="https://cdn.jsdelivr.net/npm/nanogallery2@3/dist/css/nanogallery2.min.css" rel="stylesheet" type="text/css">
+  <script  type="text/javascript" src="https://cdn.jsdelivr.net/npm/nanogallery2@3/dist/jquery.nanogallery2.min.js"></script>
+
+  <!-- Favicon -->
+  <link id="favicon" rel="shortcut icon" href="./assets/files/images/profile.png" type="image/x-png" class="noselect" />
+
+  <style>
+    html,
+    body {
+      height: 100%;
+      margin: 0;
+      padding: 0;
+    }
+    body {
+      display: flex;
+      flex-direction: column;
+    }
+    /* This wrapper adds top padding equal to the fixed header height */
+    .content-wrapper {
+      flex: 1;
+      padding-top: 6.5rem;
+    }
+  </style>
+
+  <title>Photography | Nature</title>
+</head>
+<body oncontextmenu="return false">
+  <!-- Navbar Starts -->
+  <header>
+    <a href="../../../index.html" class="logo">Photography | Nature</a>
+    <div id="menu" class="fas fa-bars"></div>
+    <nav class="navbar">
+      <ul>
+        <li><a href="../../../index.html#home">Home</a></li>
+      </ul>
+    </nav>
+  </header>
+  <!-- Navbar Ends -->
+
+  <!-- Main Content Wrapper -->
+  <main class="content-wrapper">
+    <!-- Photography Gallery Section -->
+    <section class="spacing projects" id="photography">
+      <h2 class="heading">
+        <i class="fa-solid fa-kiwi-bird" style="color:#355E3B"></i>
+        <span>Nature Photography</span>
+      </h2>
+      <div id="my_nanogallery2">gallery_made_with_nanogallery2</div>
+            
+      <script>
+         $("#my_nanogallery2").nanogallery2({
+          thumbnailHeight: 500,
+          thumbnailWidth: 500,
+          itemsBaseURL: '../../../assets/files/images/photography/',
+          galleryMosaic : [                       
+            { w: 2, h: 2, c: 1, r: 1 },
+            { w: 1, h: 1, c: 3, r: 1 },
+            { w: 1, h: 1, c: 3, r: 2 },
+            { w: 1, h: 2, c: 4, r: 1 },
+            { w: 2, h: 1, c: 5, r: 1 },
+            { w: 2, h: 3, c: 5, r: 2 },
+            { w: 1, h: 2, c: 4, r: 3 },
+            { w: 2, h: 2, c: 2, r: 3 },
+            { w: 1, h: 2, c: 1, r: 3 },
+          
+            
+          ],
+          galleryMosaicXS : [                    
+            { w: 2, h: 2, c: 1, r: 1 },
+            { w: 1, h: 1, c: 3, r: 1 },
+            { w: 1, h: 1, c: 3, r: 2 },
+            { w: 1, h: 2, c: 1, r: 3 },
+            { w: 2, h: 1, c: 2, r: 3 },
+            { w: 1, h: 1, c: 2, r: 4 },
+            { w: 1, h: 1, c: 3, r: 4 }
+          ],
+          galleryMosaicSM : [ 
+            { w: 2, h: 2, c: 1, r: 1 },
+            { w: 1, h: 1, c: 3, r: 1 },
+            { w: 1, h: 1, c: 3, r: 2 },
+            { w: 1, h: 2, c: 1, r: 3 },
+            { w: 2, h: 1, c: 2, r: 3 },
+            { w: 1, h: 1, c: 2, r: 4 },
+            { w: 1, h: 1, c: 3, r: 4 }
+          ],
+          galleryMaxRows: 1,
+          galleryDisplayMode: 'rows',
+          gallerySorting: 'none',
+          thumbnailDisplayOrder: 'random',
+          thumbnailHeight: '180', 
+          thumbnailWidth: '220',
+          thumbnailAlignment: 'scaled',
+          thumbnailGutterWidth: 0, 
+          thumbnailGutterHeight: 0,
+          thumbnailBorderHorizontal: 0, 
+          thumbnailBorderVertical: 0,
+          thumbnailToolbarImage: ['download'],
+          thumbnailToolbarAlbum: null,
+          thumbnailLabel: { display: false },
+          galleryDisplayTransitionDuration: 1500,
+          thumbnailDisplayTransition: 'imageSlideUp',
+          thumbnailDisplayTransitionDuration: 300,
+          thumbnailDisplayTransitionEasing: 'easeInOutQuint',
+          thumbnailDisplayInterval: 30,
+          thumbnailBuildInit2: 'image_scale_1.1',
+          thumbnailHoverEffect2: 'thumbnail_scale_1.00_1.05_300|image_scale_1.15_1.00',
+          touchAnimation: true,
+          touchAutoOpenDelay: 200,
+          viewerToolbar: { display: false },
+          viewerTools: {
+            topLeft: 'label',
+            topRight: 'shareButton, rotateLeft, rotateRight, fullscreenButton, downloadButton, closeButton'
+          },
+          galleryTheme: { 
+            thumbnail: { background: '#111' }
+          },
+          locationHash: true,
+          items: [
+            { src: '18_wattie_photography_watermarked.jpg', srct: '18_wattie_photography_watermarked.jpg', title: 'Egyptian Goose overlooking a pond, 2024.' },
+            { src: '03_wattie_photography_watermarked.jpg', srct: '03_wattie_photography_watermarked.jpg', title: 'Seagull on the Thames, Taken 2021.' },
+            { src: '09_wattie_photography_watermarked.jpg', srct: '09_wattie_photography_watermarked.jpg', title: 'Macro Leaf, Taken 2020.' },
+            { src: '10_wattie_photography_watermarked.jpg', srct: '10_wattie_photography_watermarked.jpg', title: 'Leaves n\'Bars, taken 2024.' },
+            { src: '11_wattie_photography_watermarked.jpg', srct: '11_wattie_photography_watermarked.jpg', title: 'Beautiful Flowers, Taken 2024.' },
+            { src: '14_wattie_photography_watermarked.jpg', srct: '14_wattie_photography_watermarked.jpg', title: 'London, 2022.' },
+            { src: '15_wattie_photography_watermarked.jpg', srct: '15_wattie_photography_watermarked.jpg', title: 'Flower, Taken in 2024' },
+            { src: '17_wattie_photography_watermarked.jpg', srct: '17_wattie_photography_watermarked.jpg', title: 'Egyptian Goose, 2024. Taken with Nikon z50.' },
+            { src: '02_wattie_photography_watermarked.jpg', srct: '02_wattie_photography_watermarked.jpg', title: 'Tree in the Park, 2021.' },
+            { src: '16_wattie_photography_watermarked.jpg', srct: '16_wattie_photography_watermarked.jpg', title: 'Pink flowers overlooking the sky, 2024.' },
+          ],
+          fnImgToolbarCustAction: function($button, item) {
+            if ($button.hasClass('downloadButton')) {
+              $button.off('click').on('click', function(e) {
+                e.preventDefault(); 
+                var url = item.src;
+                var a = document.createElement('a');
+                a.href = url;
+                a.download = url.split('/').pop();
+                document.body.appendChild(a);
+                a.click();
+                document.body.removeChild(a);
+              });
+            }
+          }
+        });
+      </script>
+    </section>
+  </main>
+  <!-- Main Content Wrapper Ends -->
+
+  <!-- Footer Section -->
+  <section class="spacing footer">
+    <div class="box-container">
+      <div class="box">
+        <h3>My Portfolio</h3>
+        <p>Thank you for looking at my Portfolio! Feel free to get in touch about commission work, collaborations, photography shoots, or anything else! I am open.</p>
+      </div>
+      <div class="box">
+        <h3>quick links</h3>
+        <a href="../../../index.html"><i class="fas fa-chevron-circle-right"></i> home</a>
+      </div>
+      <div class="box">
+        <h3>contact info</h3>
+        <p><i class="fas fa-envelope"></i> hello@wattie.work</p>
+        <p><i class="fas fa-map-marked-alt"></i> London, United Kingdom</p>
+        <div class="share">
+          <a href="mailto:hello@wattie.work"><i class="fas fa-envelope"></i></a>
+          <a href="https://github.com/wattsoner"><i class="fab fa-github"></i></a>
+          <a href="https://bsky.app/profile/wattie.bsky.social"><i class="fab fa-bluesky"></i></a>
+          <a href="https://wattieee.itch.io"><i class="fab fa-itch-io"></i></a>
+          <a href="https://www.flickr.com/photos/wattsoner/"><i class="fab fa-flickr"></i></a>
+        </div>       
+      </div>
+    </div>
+  </section>
+  <!-- Footer Ends -->
+
+  <!-- Scroll Top Button -->
+  <a href="../../../index.html#home" class="fas fa-angle-up" id="scroll-top"></a>
+
+  <!-- Scripts -->
+  <script src="https://cdn.jsdelivr.net/npm/jquery@3.3.1/dist/jquery.min.js" type="text/javascript"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/js/all.min.js"></script>
+  <script src="./assets/js/particles.min.js"></script>
+  <script src="./assets/js/app.js"></script>
+  <script src="https://unpkg.com/scrollreveal"></script>
+  <script src="../../js/script.js"></script>
+  <script src="../../js/gallery.js"></script>
+</body>
+</html>

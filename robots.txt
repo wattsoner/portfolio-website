@@ -1,0 +1,21 @@
+# robots.txt for www.wattie.work
+
+User-agent: *
+Disallow: /
+
+User-agent: Googlebot
+Allow: /
+
+User-agent: ia_archiver
+Allow: /
+
+Sitemap: https://wattie.work/sitemap.xml
+
+
+#  _O/                   ,
+#     \                  /           \O_
+#     /\_             `\_\        ,/\/
+#     \  `       ,        \         /
+#    `       O/ /       /O\        \
+#             /\|/\.                `
+

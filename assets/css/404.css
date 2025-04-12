@@ -1,0 +1,48 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  html, body {
+    height: 100%;
+    font-family: 'Nunito', sans-serif;
+    color: #12372A;
+  }
+  body {
+    background: url("/assets/files/images/backgrounds/404.png") center center / cover no-repeat;
+    
+  }
+  
+  .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    text-align: center;
+    padding: 2rem;
+    background: rgba(251, 250, 218, 0.7);
+  }
+  h1 {
+    font-size: 8rem;
+    margin-bottom: 1rem;
+    color: #436850;
+  }
+  p {
+    font-size: 2rem;
+    margin-bottom: 2rem;
+  }
+  a {
+    display: inline-block;
+    padding: 1.6rem 3rem;
+    border-radius: 4em;
+    background: #436850;
+    color: #fff;
+    text-decoration: none;
+    font-size: 1.7rem;
+    transition: background 0.3s, transform 0.3s;
+  }
+  a:hover {
+    background: #12372A;
+    transform: translateY(-3px) scale(1.05);
+  }
